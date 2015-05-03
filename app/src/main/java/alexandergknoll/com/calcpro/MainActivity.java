@@ -34,12 +34,13 @@ public class MainActivity extends ActionBarActivity {
     public void calcPressNum(View v) {
         CharSequence firstVal = view.getText();
         CharSequence secondVal = ((Button)v).getText();
-        if (operatorPressed == true) {
+        if (operatorPressed == true || (firstVal.toString().equals("0"))) {
             view.setText(secondVal.toString());
-        } else {
+            operatorPressed = false;
+        } else if (!(secondVal.toString().equals("0") && (firstVal.toString().equals("0")))) {
             view.setText(firstVal.toString().concat(secondVal.toString()));
+            operatorPressed = false;
         }
-        operatorPressed = false;
     }
 
     public void calcPressDecimal(View v) {
@@ -63,7 +64,11 @@ public class MainActivity extends ActionBarActivity {
         } else if (lastOperator.equals("X")) {
             storedVal = storedVal * currentVal;
         } else if (lastOperator.equals("/")) {
-            storedVal = storedVal / currentVal;
+            if (currentVal == Float.parseFloat("0")) {
+                storedVal = Float.parseFloat("0");
+            } else {
+                storedVal = storedVal / currentVal;
+            }
         } else {
             storedVal = currentVal;
         }

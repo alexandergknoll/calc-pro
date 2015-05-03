@@ -20,248 +20,270 @@
         android:textColor="#ffffffff"
         android:textAlignment="viewEnd" />
 
-    <Button
-        android:layout_width="82dp"
-        android:layout_height="82dp"
-        android:text="AC"
-        android:id="@+id/calcAC"
-        android:layout_gravity="bottom|left|right|top"
-        android:textSize="40dp"
-        android:textColor="#ff000000"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:textStyle="bold"
-        android:clickable="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignBottom="@+id/textView"
-        android:onClick="calcReset" />
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:layout_gravity="fill_vertical"
+        android:paddingTop="90dp" >
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="376dp"
-        android:columnCount="5"
-        android:rowCount="5"
-        android:layout_gravity="bottom|center_horizontal"
-        android:orientation="horizontal"
-        android:id="@+id/calc"
-        android:layout_alignParentBottom="true">
+        <TableRow android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7"
-            android:id="@+id/calc7"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:onClick="calcPressNum" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="AC"
+                android:id="@+id/calcAC"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcReset"
+                android:backgroundTint="#ffff0300" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:id="@+id/calc8"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+        </TableRow>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="9"
-            android:id="@+id/calc9"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+        <TableRow android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/"
-            android:id="@+id/calcDivide"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:layout_row="0"
-            android:layout_column="4"
-            android:textStyle="bold"
-            android:textColor="#ff000000"
-            android:clickable="true"
-            android:onClick="calcOperator" />
+            <Button
+                android:id="@+id/calc7"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:text="7"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:id="@+id/calc4"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calc8"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="8"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:id="@+id/calc5"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calc9"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:text="9"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:id="@+id/calc6"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calcDivide"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:text="/"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcOperator"
+                android:backgroundTint="#ffa5a5a5" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="X"
-            android:id="@+id/calcMultiply"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:layout_row="1"
-            android:layout_column="4"
-            android:textStyle="bold"
-            android:textColor="#ff000000"
-            android:clickable="true"
-            android:onClick="calcOperator" />
+        </TableRow>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:id="@+id/calc1"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="3"
-            android:layout_column="0"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+        <TableRow android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2"
-            android:id="@+id/calc2"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="3"
-            android:layout_column="1"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calc4"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:text="4"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:id="@+id/calc3"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="3"
-            android:layout_column="2"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calc5"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="5"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:id="@+id/calcSubtract"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:layout_row="3"
-            android:layout_column="4"
-            android:textStyle="bold"
-            android:textColor="#ff000000"
-            android:clickable="true"
-            android:onClick="calcOperator" />
+            <Button
+                android:id="@+id/calc6"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:text="6"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:id="@+id/calc0"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:textStyle="bold"
-            android:onClick="calcPressNum" />
+            <Button
+                android:id="@+id/calcMultiply"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:text="X"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcOperator"
+                android:backgroundTint="#ffa5a5a5" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="."
-            android:id="@+id/calcPoint"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:textColor="#ff000000"
-            android:layout_row="4"
-            android:layout_column="1"
-            android:textStyle="bold"
-            android:onClick="calcPressDecimal" />
+        </TableRow>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="="
-            android:id="@+id/calcEquals"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:layout_row="4"
-            android:layout_column="2"
-            android:textColor="#ff000000"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:onClick="calcOperator" />
+        <TableRow android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:id="@+id/calcPlus"
-            android:layout_gravity="bottom|left|right|top"
-            android:textSize="40dp"
-            android:layout_row="4"
-            android:layout_column="4"
-            android:textStyle="bold"
-            android:textColor="#ff000000"
-            android:clickable="true"
-            android:onClick="calcOperator" />
+            <Button
+                android:id="@+id/calc1"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:text="1"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
 
-    </GridLayout>
+            <Button
+                android:id="@+id/calc2"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="2"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
+
+            <Button
+                android:id="@+id/calc3"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:text="3"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
+
+            <Button
+                android:id="@+id/calcSubtract"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:text="-"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcOperator"
+                android:backgroundTint="#ffa5a5a5" />
+
+        </TableRow>
+
+        <TableRow android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id="@+id/calc0"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:text="0"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNum"
+                android:backgroundTint="#fff8f8f8" />
+
+            <Button
+                android:id="@+id/calcDecimal"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="."
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressDecimal"
+                android:backgroundTint="#fff8f8f8" />
+
+            <Button
+                android:id="@+id/calcEquals"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:text="="
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcOperator"
+                android:backgroundTint="#ff11ff00" />
+
+            <Button
+                android:id="@+id/calcPlus"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:text="+"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcOperator"
+                android:backgroundTint="#ffa5a5a5" />
+
+        </TableRow>
+
+    </TableLayout>
 
 </RelativeLayout>
