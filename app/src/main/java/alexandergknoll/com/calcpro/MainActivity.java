@@ -42,6 +42,16 @@ public class MainActivity extends ActionBarActivity {
         operatorPressed = false;
     }
 
+    public void calcPressDecimal(View v) {
+        CharSequence currentVal = view.getText();
+        if (operatorPressed == true) {
+            view.setText("0.");
+        } else if (!currentVal.toString().contains(".")) {
+            view.setText(currentVal.toString().concat("."));
+        }
+        operatorPressed = false;
+    }
+
     public void calcOperator (View v) {
         CharSequence currentDisplay = view.getText();
         float currentVal = Float.parseFloat(currentDisplay.toString());
