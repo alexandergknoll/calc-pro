@@ -17,8 +17,7 @@
         android:padding="10dp"
         android:layout_row="19"
         android:layout_column="0"
-        android:textColor="#ffffffff"
-        android:textAlignment="viewEnd" />
+        android:textColor="#ffffffff" />
 
     <TableLayout
         android:id="@+id/TableLayout01"
@@ -35,7 +34,7 @@
 
             <Button
                 android:layout_height="wrap_content"
-                android:layout_column="3"
+                android:layout_column="0"
                 android:text="AC"
                 android:id="@+id/calcAC"
                 android:layout_gravity="bottom"
@@ -43,8 +42,21 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcReset"
+                android:onClick="calcPressAC"
                 android:backgroundTint="#ffff0300" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="+/-"
+                android:id="@+id/calcPlusMinus"
+                android:layout_gravity="bottom"
+                android:textSize="40dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="calcPressNegate"
+                android:backgroundTint="#ffa5a5a5" />
 
         </TableRow>
 
@@ -96,13 +108,13 @@
                 android:id="@+id/calcDivide"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-                android:text="/"
+                android:text="÷"
                 android:layout_gravity="bottom"
                 android:textSize="40dp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcOperator"
+                android:onClick="calcPressOperator"
                 android:backgroundTint="#ffa5a5a5" />
 
         </TableRow>
@@ -161,7 +173,7 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcOperator"
+                android:onClick="calcPressOperator"
                 android:backgroundTint="#ffa5a5a5" />
 
         </TableRow>
@@ -220,7 +232,7 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcOperator"
+                android:onClick="calcPressOperator"
                 android:backgroundTint="#ffa5a5a5" />
 
         </TableRow>
@@ -266,7 +278,7 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcOperator"
+                android:onClick="calcPressOperator"
                 android:backgroundTint="#ff11ff00" />
 
             <Button
@@ -279,7 +291,7 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcOperator"
+                android:onClick="calcPressOperator"
                 android:backgroundTint="#ffa5a5a5" />
 
         </TableRow>

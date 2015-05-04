@@ -24,14 +24,14 @@ public class MainActivity extends ActionBarActivity {
         view = (TextView)findViewById(R.id.textView);
     }
 
-    public void calcReset (View v) {
+    public void calcPressAC (View v) {
         view.setText("0");
         storedVal = Float.parseFloat("0");
         operatorPressed = true;
         lastOperator = "AC";
     }
 
-    public void calcPressNum(View v) {
+    public void calcPressNum (View v) {
         CharSequence firstVal = view.getText();
         CharSequence secondVal = ((Button)v).getText();
         if (operatorPressed == true || (firstVal.toString().equals("0"))) {
@@ -43,7 +43,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public void calcPressDecimal(View v) {
+    public void calcPressDecimal (View v) {
         CharSequence currentVal = view.getText();
         if (operatorPressed == true) {
             view.setText("0.");
@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
         operatorPressed = false;
     }
 
-    public void calcOperator (View v) {
+    public void calcPressOperator (View v) {
         CharSequence currentDisplay = view.getText();
         float currentVal = Float.parseFloat(currentDisplay.toString());
 
@@ -63,18 +63,22 @@ public class MainActivity extends ActionBarActivity {
             storedVal = storedVal - currentVal;
         } else if (lastOperator.equals("X")) {
             storedVal = storedVal * currentVal;
-        } else if (lastOperator.equals("/")) {
-            if (currentVal == Float.parseFloat("0")) {
-                storedVal = Float.parseFloat("0");
-            } else {
-                storedVal = storedVal / currentVal;
-            }
+        } else if (lastOperator.equals("÷")) {
+            storedVal = storedVal / currentVal;
         } else {
             storedVal = currentVal;
         }
         lastOperator = ((Button)v).getText().toString();
         operatorPressed = true;
         view.setText(Float.toString(storedVal));
+    }
+
+    public void calcPressNegate (View v) {
+        CharSequence currentDisplay = view.getText();
+        float currentVal = Float.parseFloat(currentDisplay.toString());
+        float negatedVal = Float.parseFloat("0") - currentVal;
+        operatorPressed = true;
+        view.setText(Float.toString(negatedVal));
     }
 
 }
