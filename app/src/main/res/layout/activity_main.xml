@@ -9,14 +9,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:text="0"
+        android:text="@string/default_view"
         android:id="@+id/textView"
-        android:layout_gravity="left|top"
+        android:layout_gravity="start"
         android:background="#ff000000"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:padding="10dp"
-        android:layout_row="19"
-        android:layout_column="0"
         android:textColor="#ffffffff" />
 
     <TableLayout
@@ -27,7 +25,8 @@
         android:layout_gravity="fill_vertical"
         android:paddingTop="90dp" >
 
-        <TableRow android:layout_gravity="bottom"
+        <TableRow
+            android:layout_gravity="bottom"
             android:layout_weight="1"
             android:layout_height="0dp"
             android:layout_width="fill_parent">
@@ -35,28 +34,26 @@
             <Button
                 android:layout_height="wrap_content"
                 android:layout_column="0"
-                android:text="AC"
+                android:text="@string/ac_button"
                 android:id="@+id/calcAC"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressAC"
-                android:backgroundTint="#ffff0300" />
+                android:onClick="calcPressAC" />
 
             <Button
                 android:layout_height="wrap_content"
                 android:layout_column="3"
-                android:text="+/-"
+                android:text="@string/negate_button"
                 android:id="@+id/calcPlusMinus"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNegate"
-                android:backgroundTint="#ffa5a5a5" />
+                android:onClick="calcPressNegate" />
 
         </TableRow>
 
@@ -69,53 +66,49 @@
                 android:id="@+id/calc7"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:text="7"
+                android:text="@string/num_7_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc8"
                 android:layout_height="match_parent"
                 android:layout_column="1"
-                android:text="8"
+                android:text="@string/num_8_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc9"
                 android:layout_height="match_parent"
                 android:layout_column="2"
-                android:text="9"
+                android:text="@string/num_9_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calcDivide"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-                android:text="÷"
+                android:text="@string/div_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator"
-                android:backgroundTint="#ffa5a5a5" />
+                android:onClick="calcPressOperator" />
 
         </TableRow>
 
@@ -128,53 +121,49 @@
                 android:id="@+id/calc4"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:text="4"
+                android:text="@string/num_4_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc5"
                 android:layout_height="match_parent"
                 android:layout_column="1"
-                android:text="5"
+                android:text="@string/num_5_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc6"
                 android:layout_height="match_parent"
                 android:layout_column="2"
-                android:text="6"
+                android:text="@string/num_6_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calcMultiply"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-                android:text="X"
+                android:text="@string/times_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator"
-                android:backgroundTint="#ffa5a5a5" />
+                android:onClick="calcPressOperator" />
 
         </TableRow>
 
@@ -187,53 +176,49 @@
                 android:id="@+id/calc1"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:text="1"
+                android:text="@string/num_1_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc2"
                 android:layout_height="match_parent"
                 android:layout_column="1"
-                android:text="2"
+                android:text="@string/num_2_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calc3"
                 android:layout_height="match_parent"
                 android:layout_column="2"
-                android:text="3"
+                android:text="@string/num_3_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calcSubtract"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-                android:text="-"
+                android:text="@string/minus_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator"
-                android:backgroundTint="#ffa5a5a5" />
+                android:onClick="calcPressOperator" />
 
         </TableRow>
 
@@ -246,53 +231,49 @@
                 android:id="@+id/calc0"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:text="0"
+                android:text="@string/num_0_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressNum" />
 
             <Button
                 android:id="@+id/calcDecimal"
                 android:layout_height="match_parent"
                 android:layout_column="1"
-                android:text="."
+                android:text="@string/decimal_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressDecimal"
-                android:backgroundTint="#fff8f8f8" />
+                android:onClick="calcPressDecimal" />
 
             <Button
                 android:id="@+id/calcEquals"
                 android:layout_height="match_parent"
                 android:layout_column="2"
-                android:text="="
+                android:text="@string/equals_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator"
-                android:backgroundTint="#ff11ff00" />
+                android:onClick="calcPressOperator" />
 
             <Button
                 android:id="@+id/calcPlus"
                 android:layout_height="match_parent"
                 android:layout_column="3"
-                android:text="+"
+                android:text="@string/plus_button"
                 android:layout_gravity="bottom"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator"
-                android:backgroundTint="#ffa5a5a5" />
+                android:onClick="calcPressOperator" />
 
         </TableRow>
 

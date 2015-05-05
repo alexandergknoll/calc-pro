@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">CalcPro</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="default_view">0</string>
+    <string name="ac_button">AC</string>
+    <string name="num_0_button">0</string>
+    <string name="num_1_button">1</string>
+    <string name="num_2_button">2</string>
+    <string name="num_3_button">3</string>
+    <string name="num_4_button">4</string>
+    <string name="num_5_button">5</string>
+    <string name="num_6_button">6</string>
+    <string name="num_7_button">7</string>
+    <string name="num_8_button">8</string>
+    <string name="num_9_button">9</string>
+    <string name="negate_button">+/-</string>
+    <string name="div_button">÷</string>
+    <string name="times_button">X</string>
+    <string name="minus_button">-</string>
+    <string name="decimal_button">.</string>
+    <string name="equals_button">=</string>
+    <string name="plus_button">+</string>
     <string name="action_settings">Settings</string>
 </resources>
