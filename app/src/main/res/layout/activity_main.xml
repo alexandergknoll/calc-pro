@@ -32,6 +32,8 @@
             android:layout_width="fill_parent">
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/red_button"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
                 android:text="@string/ac_button"
@@ -41,9 +43,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressAC" />
+                android:onClick="calcPressAC"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/gray_button"
                 android:layout_height="wrap_content"
                 android:layout_column="3"
                 android:text="@string/negate_button"
@@ -53,7 +58,8 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNegate" />
+                android:onClick="calcPressNegate"
+                android:layout_margin="2dp" />
 
         </TableRow>
 
@@ -63,6 +69,8 @@
             android:layout_width="fill_parent">
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc7"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -72,9 +80,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc8"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -84,9 +95,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc9"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -96,9 +110,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/gray_button"
                 android:id="@+id/calcDivide"
                 android:layout_height="match_parent"
                 android:layout_column="3"
@@ -108,7 +125,8 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator" />
+                android:onClick="calcPressOperator"
+                android:layout_margin="2dp" />
 
         </TableRow>
 
@@ -118,6 +136,8 @@
             android:layout_width="fill_parent">
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc4"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -127,9 +147,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc5"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -139,9 +162,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc6"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -151,9 +177,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/gray_button"
                 android:id="@+id/calcMultiply"
                 android:layout_height="match_parent"
                 android:layout_column="3"
@@ -163,7 +192,8 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator" />
+                android:onClick="calcPressOperator"
+                android:layout_margin="2dp" />
 
         </TableRow>
 
@@ -173,6 +203,8 @@
             android:layout_width="fill_parent">
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc1"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -182,9 +214,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc2"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -194,9 +229,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc3"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -206,9 +244,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/gray_button"
                 android:id="@+id/calcSubtract"
                 android:layout_height="match_parent"
                 android:layout_column="3"
@@ -218,7 +259,8 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator" />
+                android:onClick="calcPressOperator"
+                android:layout_margin="2dp" />
 
         </TableRow>
 
@@ -228,6 +270,8 @@
             android:layout_width="fill_parent">
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calc0"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -237,9 +281,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressNum" />
+                android:onClick="calcPressNum"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/white_button"
                 android:id="@+id/calcDecimal"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -249,9 +296,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressDecimal" />
+                android:onClick="calcPressDecimal"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/green_button"
                 android:id="@+id/calcEquals"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -261,9 +311,12 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator" />
+                android:onClick="calcPressOperator"
+                android:layout_margin="2dp" />
 
             <Button
+                style="?android:attr/buttonStyleSmall"
+                android:background="@drawable/gray_button"
                 android:id="@+id/calcPlus"
                 android:layout_height="match_parent"
                 android:layout_column="3"
@@ -273,7 +326,8 @@
                 android:textColor="#ff000000"
                 android:textStyle="bold"
                 android:clickable="true"
-                android:onClick="calcPressOperator" />
+                android:onClick="calcPressOperator"
+                android:layout_margin="2dp" />
 
         </TableRow>
 

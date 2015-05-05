@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
     public void calcPressNum (View v) {
         CharSequence firstVal = view.getText();
         CharSequence secondVal = ((Button)v).getText();
-        if (operatorPressed == true || (firstVal.toString().equals("0"))) {
+        if (operatorPressed || (firstVal.toString().equals("0"))) {
             view.setText(secondVal.toString());
             operatorPressed = false;
         } else if (!(secondVal.toString().equals("0") && (firstVal.toString().equals("0")))) {
@@ -45,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void calcPressDecimal (View v) {
         CharSequence currentVal = view.getText();
-        if (operatorPressed == true) {
+        if (operatorPressed) {
             view.setText("0.");
         } else if (!currentVal.toString().contains(".")) {
             view.setText(currentVal.toString().concat("."));
